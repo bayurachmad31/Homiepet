@@ -1,0 +1,116 @@
+@media screen and (min-width: 650px) {
+    .app-bar {
+      grid-template-columns: 1fr auto;
+      padding: 8px 32px;
+    }
+   
+    .app-bar .app-bar__brand h1 {
+      font-size: 1.5em;
+         /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-200px, 0);
+    transform: translate(-10px, 0);
+
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.2s ease;
+    }
+   
+    .app-bar .app-bar__menu {
+      display: none;
+    }
+   
+    .app-bar .app-bar__navigation {
+      position: static;
+      width: 100%;
+    }
+   
+    .app-bar .app-bar__navigation ul li {
+      display: inline-block;
+
+    }
+   
+    .app-bar .app-bar__navigation ul li a {
+      display: inline-block;
+      width: 120px;
+      text-align: center;
+      margin: 0;
+      -webkit-transform: translate(-200px, 0);
+      transform: translateX(-10px);
+      transition: transform .7s cubic-bezier(1, 0.010, 0.20, 3);
+    }
+
+    .movies {
+      grid-template-columns: 1fr 1fr;
+    }
+   
+    .movie {
+      grid-template-columns: auto 1fr;
+    }
+   
+    .movie .movie__title {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+   
+    .movie .movie__overview {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+   
+  @media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+      font-size: 1.5em;
+      -webkit-transform: translate(-200px, 0);
+      transform: translateX(-10px);
+      transition: transform .7s cubic-bezier(1, 0.010, 0.20, 3);
+    }
+  }
+  @media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+      font-size: 1.5em;
+      -webkit-transform: translate(-200px, 0);
+      transform: translateX(-10px);
+      transition: transform .7s cubic-bezier(1, 0.010, 0.20, 3);
+    }
+  }
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+    -webkit-transform: translate(-200px, 0);
+    transform: translateX(-10px);
+    transition: transform .7s cubic-bezier(1, 0.010, 0.20, 3);
+  }
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 135px;
+    text-align: left;
+    margin: 0;
+    background-color: #4D637C;
+    -webkit-transform: translate(-200px, 0);
+    transform: translateX(-10px);
+    transition: transform .7s cubic-bezier(1, 0.010, 0.20, 3);
+  }
+   
+  @media screen and (min-width: 850px) {
+    .movies {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   
+  @media screen and (min-width: 1200px) {
+    .app-bar .app-bar__navigation ul li a {
+      font-size: 1.2em;
+    }
+    .movies {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+   
+  @media screen and (min-width: 1600px) {
+    .app-bar .app-bar__navigation ul li a {
+      font-size: 1.2em;
+    }
+    .movies {
+        grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
