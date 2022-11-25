@@ -1,7 +1,6 @@
 {
   "name": "restot",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,5 +27,14 @@
   },
   "dependencies": {
     "regenerator-runtime": "^0.13.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayurachmad31/homiepet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bayurachmad31/homiepet/issues"
+  },
+  "homepage": "https://github.com/bayurachmad31/homiepet#readme",
+  "description": ""
 }
