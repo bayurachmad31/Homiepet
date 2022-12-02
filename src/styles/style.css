@@ -46,6 +46,12 @@ body {
   display: flex;
   align-items: center;
 
+
+}
+.app-bar .app-bar__brand img{
+  max-width : 960px;
+  height: auto;
+
 }
 
 .app-bar .app-bar__brand h1 {
