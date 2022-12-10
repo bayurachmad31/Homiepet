@@ -25,7 +25,6 @@
    
     .app-bar .app-bar__navigation ul li {
       display: inline-block;
-
     }
    
     .app-bar .app-bar__navigation ul li a {
@@ -33,11 +32,14 @@
       width: 120px;
       text-align: center;
       margin: 0;
-      -webkit-transform: translate(-200px, 0);
-      transform: translateX(-10px);
-      transition: transform .7s cubic-bezier(1, 0.010, 0.20, 3);
-    }
+      /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-200px, 0);
+    transform: translate(-10px, 0);
 
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.2s ease;
+    }
+   
     .movies {
       grid-template-columns: 1fr 1fr;
     }
@@ -61,35 +63,43 @@
     .app-bar .app-bar__brand h1 {
       font-size: 1.5em;
       -webkit-transform: translate(-200px, 0);
-      transform: translateX(-10px);
-      transition: transform .7s cubic-bezier(1, 0.010, 0.20, 3);
+      transform: translate(-10px, 0);
+  
+      /* Optionally, we animate the drawer. */
+      transition: transform 0.2s ease;
     }
   }
   @media screen and (min-width: 800px) {
     .app-bar .app-bar__brand h1 {
       font-size: 1.5em;
       -webkit-transform: translate(-200px, 0);
-      transform: translateX(-10px);
-      transition: transform .7s cubic-bezier(1, 0.010, 0.20, 3);
+      transform: translate(-10px, 0);
+  
+      /* Optionally, we animate the drawer. */
+      transition: transform 0.2s ease;
     }
   }
   .app-bar .app-bar__brand h1 {
     font-size: 2em;
     -webkit-transform: translate(-200px, 0);
-    transform: translateX(-10px);
-    transition: transform .7s cubic-bezier(1, 0.010, 0.20, 3);
+    transform: translate(-10px, 0);
+
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.2s ease;
   }
   .app-bar .app-bar__navigation ul li a {
     display: inline-block;
-    width: 135px;
+    width: 120px;
     text-align: left;
     margin: 0;
     background-color: #4D637C;
-    -webkit-transform: translate(-200px, 0);
-    transform: translateX(-10px);
-    transition: transform .7s cubic-bezier(1, 0.010, 0.20, 3);
+    /* This trasform moves the drawer off canvas. */
+  -webkit-transform: translate(-200px, 0);
+  transform: translate(-10px, 0);
+
+  /* Optionally, we animate the drawer. */
+  transition: transform 0.2s ease;
   }
-  
    
   @media screen and (min-width: 850px) {
     .movies {
@@ -98,19 +108,15 @@
   }
    
   @media screen and (min-width: 1200px) {
-    .app-bar .app-bar__navigation ul li a {
-      font-size: 1.2em;
-    }
     .movies {
       grid-template-columns: repeat(4, 1fr);
     }
   }
    
   @media screen and (min-width: 1600px) {
-    .app-bar .app-bar__navigation ul li a {
-      font-size: 1.2em;
-    }
     .movies {
         grid-template-columns: repeat(5, 1fr);
     }
   }
+
+  

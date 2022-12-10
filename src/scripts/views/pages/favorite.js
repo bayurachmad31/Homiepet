@@ -1,13 +1,18 @@
+/* eslint-disable */
+import FavoriteDish from '../../data/favorite-movie-idb';
+import FavoriteDishView from './favorite-dish-view';
+import FavoriteDishShowPresenter from './favorite-dish-show-presenter';
+
+const view = new FavoriteDishView();
+
 const favRest = {
   async render() {
-    return `
-      <h2>fav Page</h2>
-    `;
+    return view.getTemplate();
   },
- 
+
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    new FavoriteDishShowPresenter({ view, favoriteDish: FavoriteDish });
   },
 };
- 
+
 export default favRest;
